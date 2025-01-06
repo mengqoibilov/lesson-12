@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './i18/i18n'; 
+import "./i18/i18n"
 
 import Home from './pages/Home'; 
 import Products from './pages/Products'; 
@@ -19,7 +19,9 @@ function App() {
     <Router>
       <nav>
         <ul>
-          <li><Link to="/">{t('home')}</Link></li>
+          <li>
+            <Link to="/">{t('home')}</Link>
+            </li>
           <li><Link to="/products">{t('products')}</Link></li>
           <li><Link to="/users">{t('users')}</Link></li>
           <li><Link to="/partners">{t('partners')}</Link></li>
@@ -39,5 +41,4 @@ function App() {
     </Router>
   );
 }
-
-export default App;
+export default App; 
